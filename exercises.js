@@ -260,8 +260,15 @@ console.log(daClub(22, 26))
  * Console.log your result.
 */ 
 
-
-
+function graduation(credits, thesis){
+	if (credits >= 120 || thesis === true){
+		return "Congratulations on a job well done."
+	}
+	else{
+		return "See you in summer school."
+	}
+}
+console.log(graduation(121, false))
 /*
  * #13
  * Function - moneyTrain
