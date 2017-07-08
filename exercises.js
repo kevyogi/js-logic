@@ -132,8 +132,9 @@ function isEqual(first, second){
 	if (first === second){
 		return "You look mahvelous"
 	}
-	else 
+	else{
 		return "I don't know who you are anymore"
+	}
 }
 console.log(isEqual("why", "not"))
 /*
@@ -153,8 +154,9 @@ function notEqual(first, second){
 	if (first !== second){
 		return "Oppostites do attract."
 	}
-	else
+	else{
 		return "Cause it's like you're my mirror."
+	}
 }
 console.log(notEqual("why", "not"))
 /*
@@ -169,8 +171,15 @@ console.log(notEqual("why", "not"))
  * Console.log your result.
 */ 
 
-
-
+function spareChange(money){
+	if (money > 100){
+		return true
+	}
+	else{
+		return false
+	}
+}
+console.log(spareChange(101))
 /*
  * #9
  * Function - dirty30
