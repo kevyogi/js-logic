@@ -215,9 +215,16 @@ console.log(dirty30(8, 14, 2))
  * Console.log your result.
 */ 
 
-
-
-
+function evenStevens(num){
+	if (num % 2 === 0){
+		return true
+	}
+	else{
+		return false
+	}
+}
+console.log(evenStevens(210))
+console.log(evenStevens(211))
 /*
  * #11
  * Function - daClub
