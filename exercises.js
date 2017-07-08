@@ -149,7 +149,14 @@ console.log(isEqual("why", "not"))
  * Console.log your result.
 */
 
-
+function notEqual(first, second){
+	if (first !== second){
+		return "Oppostites do attract."
+	}
+	else
+		return "Cause it's like you're my mirror."
+}
+console.log(notEqual("why", "not"))
 /*
  * #8
  * Function - spareChange
