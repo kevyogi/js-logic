@@ -70,8 +70,9 @@ console.log(login("test1234"))
 */
 
 function isGreaterThan(first, second){
-	if (first > second)
+	if (first > second){
 		return true;
+	}
 
 }
 console.log(isGreaterThan(7, 4))
@@ -87,8 +88,14 @@ console.log(isGreaterThan(7, 4))
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+	if (boo === boo){
+		return true;
+	}
 
 
+}
+console.log(mustBeTrue("boo"))
 /*
  * #5
  * Function - bigBird
