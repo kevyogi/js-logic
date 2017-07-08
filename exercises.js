@@ -194,8 +194,15 @@ console.log(spareChange(101))
  * Console.log your result.
 */ 
 
-
-
+function dirty30(one, two , three){
+	if (one + two + three >= 30){
+		return true
+	}
+	else{
+		return false
+	}
+}
+console.log(dirty30(8, 14, 2))
 /*
  * #10
  * Function - evenStevens
