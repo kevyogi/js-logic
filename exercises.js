@@ -281,7 +281,18 @@ console.log(graduation(121, false))
  * Console.log your result.
 */ 
 
-
+function moneyTrain(speed){
+	if (speed < 50){
+		return "You are riding Honolulu's Rail."
+	}
+	else if (speed < 100){
+		return "You are riding an Amtrak."
+	}
+	else{
+		return "Now you ballin' in the Shinkansen!"
+	}
+}
+console.log(moneyTrain(101))
 /*
  * #14
  * Function - buyDoughnut
@@ -296,8 +307,22 @@ console.log(graduation(121, false))
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 21
+var doughnutPrice = 4
+var doughnutBought = 0
+function buyDoughnut(){
+	if (budget >= doughnutPrice){
+		budget = budget - doughnutPrice;
+		doughnutBought++;
+	} 
 
-
+}
+buyDoughnut()
+console.log(budget)
+console.log(doughnutBought)
+buyDoughnut()
+console.log(budget)
+console.log(doughnutBought)
 
 
 /*
