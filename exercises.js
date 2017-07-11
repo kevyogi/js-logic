@@ -54,7 +54,7 @@ function login(password){
 		return "Login Success";
 	}
 }
-console.log(login("test1234"))
+console.log(login("test1234"));
 
 /*
  * #3
@@ -75,7 +75,7 @@ function isGreaterThan(first, second){
 	}
 
 }
-console.log(isGreaterThan(7, 4))
+console.log(isGreaterThan(7, 4));
 /*
  * #4
  * Function - mustBeTrue
@@ -91,11 +91,13 @@ console.log(isGreaterThan(7, 4))
 function mustBeTrue(boo){
 	if (boo === boo){
 		return true;
+	}else{
+		return false;
 	}
 
 
 }
-console.log(mustBeTrue("boo"))
+console.log(mustBeTrue("boo"));
 /*
  * #5
  * Function - bigBird
@@ -110,11 +112,11 @@ console.log(mustBeTrue("boo"))
 
 function bigBird(word){
 	if (word.length === 3){
-		return "Word to Big Bird!"
+		return "Word to Big Bird!";
 	}
 
 }
-console.log(bigBird("fat"))
+console.log(bigBird("fat"));
 /*
  * #6
  * Function - isEqual
@@ -130,13 +132,13 @@ console.log(bigBird("fat"))
 
 function isEqual(first, second){
 	if (first === second){
-		return "You look mahvelous"
+		return "You look mahvelous";
 	}
 	else{
-		return "I don't know who you are anymore"
+		return "I don't know who you are anymore";
 	}
 }
-console.log(isEqual("why", "not"))
+console.log(isEqual("why", "not"));
 /*
  * #7
  * Function - notEqual
@@ -152,13 +154,13 @@ console.log(isEqual("why", "not"))
 
 function notEqual(first, second){
 	if (first !== second){
-		return "Oppostites do attract."
+		return "Oppostites do attract.";
 	}
 	else{
-		return "Cause it's like you're my mirror."
+		return "Cause it's like you're my mirror.";
 	}
 }
-console.log(notEqual("why", "not"))
+console.log(notEqual("why", "not"));
 /*
  * #8
  * Function - spareChange
@@ -173,13 +175,13 @@ console.log(notEqual("why", "not"))
 
 function spareChange(money){
 	if (money > 100){
-		return true
+		return true;
 	}
 	else{
-		return false
+		return false;
 	}
 }
-console.log(spareChange(101))
+console.log(spareChange(101));
 /*
  * #9
  * Function - dirty30
@@ -195,14 +197,14 @@ console.log(spareChange(101))
 */ 
 
 function dirty30(one, two , three){
-	if (one + two + three >= 30){
-		return true
+	if (one + two + three > 30){
+		return true;
 	}
 	else{
-		return false
+		return false;
 	}
 }
-console.log(dirty30(8, 14, 2))
+console.log(dirty30(8, 14, 2));
 /*
  * #10
  * Function - evenStevens
@@ -217,14 +219,14 @@ console.log(dirty30(8, 14, 2))
 
 function evenStevens(num){
 	if (num % 2 === 0){
-		return true
+		return true;
 	}
 	else{
-		return false
+		return false;
 	}
 }
-console.log(evenStevens(210))
-console.log(evenStevens(211))
+console.log(evenStevens(210));
+console.log(evenStevens(211));
 /*
  * #11
  * Function - daClub
@@ -240,13 +242,13 @@ console.log(evenStevens(211))
 
 function daClub(cover, age){
 	if (cover >= 21 && age >= 21){
-		return "Welcome to the Legends Lounge."
+		return "Welcome to the Legends Lounge.";
 	}
 	else{
-		return "Chuck E Cheese is across the street."
+		return "Chuck E Cheese is across the street.";
 	}
 }
-console.log(daClub(22, 26))
+console.log(daClub(22, 26));
 /*
  * #12
  * Function - graduation
@@ -262,13 +264,13 @@ console.log(daClub(22, 26))
 
 function graduation(credits, thesis){
 	if (credits >= 120 || thesis === true){
-		return "Congratulations on a job well done."
+		return "Congratulations on a job well done.";
 	}
 	else{
-		return "See you in summer school."
+		return "See you in summer school.";
 	}
 }
-console.log(graduation(121, false))
+console.log(graduation(121, false));
 /*
  * #13
  * Function - moneyTrain
@@ -283,16 +285,16 @@ console.log(graduation(121, false))
 
 function moneyTrain(speed){
 	if (speed < 50){
-		return "You are riding Honolulu's Rail."
+		return "You are riding Honolulu's Rail.";
 	}
 	else if (speed < 100){
-		return "You are riding an Amtrak."
+		return "You are riding an Amtrak.";
 	}
 	else{
-		return "Now you ballin' in the Shinkansen!"
+		return "Now you ballin' in the Shinkansen!";
 	}
 }
-console.log(moneyTrain(101))
+console.log(moneyTrain(101));
 /*
  * #14
  * Function - buyDoughnut
@@ -307,9 +309,9 @@ console.log(moneyTrain(101))
  * Console.log budget and doughnutBought again.
 */ 
 
-var budget = 21
-var doughnutPrice = 4
-var doughnutBought = 0
+var budget = 21;
+var doughnutPrice = 4;
+var doughnutBought = 0;
 function buyDoughnut(){
 	if (budget >= doughnutPrice){
 		budget = budget - doughnutPrice;
@@ -317,12 +319,12 @@ function buyDoughnut(){
 	} 
 
 }
-buyDoughnut()
-console.log(budget)
-console.log(doughnutBought)
-buyDoughnut()
-console.log(budget)
-console.log(doughnutBought)
+buyDoughnut();
+console.log(budget);
+console.log(doughnutBought);
+buyDoughnut();
+console.log(budget);
+console.log(doughnutBought);
 
 
 /*
@@ -352,13 +354,20 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+var thePlayers = ["1", "2", "3", "4", "5"];
+
+for (var i = 0; i<thePlayers.length; i = i + 1){
+	console.log("Player: " + thePlayers[i]);
+}
 
 /* 
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
-
+for (var i = 0; i<myFavFoods.length; i = i + 1){
+	console.log(myFavFoods[i]);
+}
 
 /*
  * #17
@@ -375,7 +384,17 @@ for (var i = 0; i<toyotaModels.length; i++){
  * Console.log your result.
 */
 
+var numArray = [13, 7, 4, 11, 42];
+var total = 0;
+function sumItUp(arr){
+	for (var i = 0; i<numArray.length; i++){
+		total = total + arr[i];
 
+	}
+	 return total;
+
+}
+ console.log(sumItUp(numArray));
 
 /*
  * #18
@@ -390,6 +409,23 @@ for (var i = 0; i<toyotaModels.length; i++){
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var west = [];
+var east = [];
+
+function allStars(ballers){
+	for (var i=0; i<ballers.length; i++){
+		if (i % 2 === 0){
+			east.push(ballers[i]);
+		}else{
+			west.push(ballers[i]);
+}
+			
+		}	
+}
+allStars(players);
+console.log(east);
+console.log(west);
+
 /*
  * #19
  * Function - subways
@@ -403,6 +439,7 @@ var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Si
 */ 
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+
 
 
 /*
